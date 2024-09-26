@@ -1,0 +1,271 @@
+/* Ensure no margin and padding for the whole document */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.nav-link{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.navbar-collapse{
+    justify-content: end;
+}
+/* Styles for the first background image */
+.bg-image {
+    background-image: url('../../assets/front-image.jpg');
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the whole div */
+    background-position: center; /* Center the image */
+    position: relative;
+    z-index: 1;
+}
+
+/* Styles for the second background image */
+
+.row {
+    overflow-x: hidden;
+}
+
+/* Ensure the text appears above the background images */
+.text-div {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+}
+
+/* Other styles as before */
+.companymail-text {
+    color: orange;
+    letter-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+.contact-number {
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.first-nav {
+    background-color: black;
+}
+
+.text-div{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+}
+.navbar-custom {
+    background-color: #f8a617; /* Matches the yellow shade */
+  }
+  .navbar-brand img {
+    margin-left: 290px;
+    width: 300px; /* Adjust this based on your logo size */
+    height: auto;
+  }
+  .navbar-nav {
+    margin-right: 155px;
+    color: white;
+    font-weight: bold;
+   
+  }
+  .home-link{
+    color: white;
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .active {
+    background-color: black;
+    padding: 8px 16px;
+    border-radius: 3px;
+  }
+.bg-image-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-left: 30px;
+   
+}
+
+.check-pricing-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.container.mt-5 {
+    margin-top: 30px;
+}
+
+.form {
+    border-radius: 10px;
+    height: auto; /* Change height to auto for better responsiveness */
+    max-width: 90%; /* Ensure it doesn't exceed the container width */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+    padding: 20px; /* Add padding */
+    margin-top: 75px;
+    width: 300px;
+}
+
+.form-heading {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.form-group {
+    width: 90%; /* Full width */
+    margin-bottom: 15px; 
+    margin-left: 20px;/* Add margin for spacing */
+}
+
+.icons {
+    position: absolute;
+    z-index: 5;
+    padding-top: 9px;
+    padding-left: 5px;
+}
+
+input::placeholder {
+    color: rgb(163, 160, 160);
+    font-size: 12px;
+}
+
+.submit-button {
+    width: 100%; /* Full width */
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-group .icons {
+    margin-right: 5px;
+}
+
+.input-group select {
+    font-size: 12px; /* Change the font size of the select box */
+    color: rgb(163, 160, 160); /* Change the text color of the select box */
+    background-color: #f9f9f9; /* Change the background color of the select box */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Make the corners rounded */
+    -webkit-appearance: none; /* Remove default arrow in some browsers */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow */
+    width: 100%;
+}
+
+.input-group option.default {
+    font-size: 20px; /* Larger font size for this option */
+    color: rgb(0, 0, 0); /* Red text color for this option */
+}
+@media(max-width:1433px){
+    .navbar-brand img {
+        margin-left: 170px;
+        width: 200px; /* Adjust this based on your logo size */
+        height: auto;
+      }
+      .navbar-nav {
+        margin-right: 30px;
+        color: white;
+        font-weight: bold;
+       
+      }
+}
+@media(max-width:1075px){
+    .navbar-brand img {
+        margin-left: 100px;
+        width: 200px; /* Adjust this based on your logo size */
+        height: auto;
+      }
+      .navbar-nav {
+        margin-right: 30px;
+        color: white;
+        font-weight: bold;
+       
+      }
+}
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+    .text-div {
+        padding-left: 50px; /* Reduce padding for smaller screens */
+    }
+
+    .form {
+        width: 40%; /* Full width for smaller screens */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .bg-image-text {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-top: 100px;
+    }
+
+    .bg-image {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .bg-image-two {
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .text-div {
+        padding-left: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .bg-image-text {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+        margin-top: 50px;
+    }
+
+    .form {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 10px; /* Adjust margin */
+        padding: 10px; /* Add padding */
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .bg-image-text h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .bg-image-text h6 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .check-pricing-button {
+        width: 96%; /* Full width button for smaller screens */
+    }
+
+    .form-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

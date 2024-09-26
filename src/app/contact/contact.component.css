@@ -1,0 +1,285 @@
+/* General styles for the card */
+.container-fluid{
+    overflow: hidden;
+}
+.card {
+    margin: 0 auto;
+    width: calc(100% + 100px); /* Increase the card size by 100px */
+    max-width: 36rem; /* Adjust max-width accordingly */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Add padding for spacing between content and card edges */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border: none; /* Remove the border */
+    z-index: 1; /* Set z-index for the card */
+   
+}
+
+/* Styles for the card-wrapper */
+.card-wrapper {
+    position: relative;
+    padding-bottom: 60px; /* Adjust based on button height */
+}
+
+/* Styles for the card footer */
+.card-footer {
+    position: absolute;
+    bottom: 25px; /* Move button 20px up from the bottom */
+    left: 30px;   /* Move button 50px to the left */
+    display: flex;
+    justify-content: center;
+    border: none;
+    z-index: 2; /* Set z-index for the card-footer */
+}
+
+/* Styles for the button */
+.btn {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* Styles for headings */
+.contact-first-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+    padding: 0 7rem;
+}
+
+/* Container styling */
+.container-fluid {
+    padding: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 645px) {
+    .contact-first-heading {
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 90%;
+        max-width: none;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination > li {
+    margin: 10px; /* Remove margin between the pagination items */
+    width: 50px; /* Ensure the width matches the circle's diameter */
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.pagination > li > a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.pagination > li > a:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: grey;
+    transition: all 0.2s;
+}
+.before{
+    color:grey ;
+}
+.pagination > li:first-of-type > a:before {
+   border-color: grey;/* Left circle background color */
+}
+
+
+
+.pagination > li > a:hover {
+    color: black;
+}
+
+.subscribe-container button {
+    background-color: #FFA500; /* Adjust color as needed */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: auto; /* Allow the button to scale with content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-radius: 2px;
+}
+.subscribe-container {
+    display: flex;
+    max-width: 100%; /* Make sure it doesn't overflow */
+    height: auto; /* Adjust the height based on content */
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/* Input field styling */
+.subscribe-container input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%; /* Ensure it takes full width in its flex container */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-radius: 2px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 574px) {
+    .subscribe-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .subscribe-container input[type="email"] {
+        margin-bottom: 10px; /* Add space between the input and the button */
+    }
+
+    .subscribe-container button {
+        width: 100%; /* Make the button take full width */
+    }
+}
+@media (max-width: 977px) {
+    .subscribe-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .subscribe-container input[type="email"] {
+        margin-bottom: 10px; /* Add space between the input and the button */
+    }
+
+    .subscribe-container button {
+        width: 100%; /* Make the button take full width */
+    }
+}
+/* Remove unnecessary line connectors between circles */
+.pagination > li:before,
+.pagination > li:after {
+    content: none;
+}
+/* Styling for the contact-image-section */
+.contact-image-section {
+    background-image: url('../../assets/bg-subcriber-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Styling for the third-section */
+.third-section {
+    position: relative;
+    padding-bottom: 100px; /* Ensures space for footer */
+    height: auto; /* Allow height to be determined by content */
+}
+
+/* Media query for screens with a max-width of 1147px */
+@media (max-width: 1147px) {
+    .contact-image-section {
+        height: auto; /* Allows the section to grow as needed */
+        padding-bottom: 100px; /* Extends image to accommodate content */
+        background-position: top; /* Keep image fixed at the top */
+    }
+
+    .third-section {
+        padding-bottom: 100px; /* Adjust padding to keep footer aligned */
+    }
+
+    .subscribe-container,
+    .contact-image-section .col-md-3 {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+}
+@media(max-width:767px){
+    .subscribe-container {
+        display: flex;
+        max-width: 50%; /* Make sure it doesn't overflow */
+        height: auto; /* Adjust the height based on content */
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    
+    /* Input field styling */
+    .subscribe-container input[type="email"] {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        width: 100%; /* Ensure it takes full width in its flex container */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        border-radius: 2px;
+    }
+    
+}
+
+
+/* Ensure footer aligns at the bottom of the webpage */
+app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.call{
+    font-size: larger;
+}
+@media(max-width:991px){
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+}

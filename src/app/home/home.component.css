@@ -1,0 +1,723 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+ 
+   
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+        height: 100%;
+     
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    
+/* Hide any overflow on the x-axis */
+}
+
+/* App Promo Section */
+.app-promo-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 40%;
+    margin-top: 50px;
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.feature-text h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.image-container {
+    max-width: 45%;
+    margin-top: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.image-container img,
+.qr-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-heading {
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('../../assets/bg-call-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.banner .text {
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+
+.banner .cta {
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+.banner .cta .phone-number {
+    font-size: 2vw;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.banner .cta .button {
+    background-color: #ffa500;
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.0vw;
+}
+
+.banner .cta .button:hover {
+    background-color: #e69500;
+}
+/* Custom Container Section */
+.custom-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items are in a row layout */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.custom-container-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.custom-content {
+    flex: 1;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.custom-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.custom-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.custom-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.custom-column {
+    width: 32%;
+    padding-right: 0;
+}
+
+.custom-feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.custom-feature-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.custom-content, .custom-images {
+    box-sizing: border-box;
+}
+/* Container and Image */
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.custom-content {
+    flex: 1 1 auto; /* Allow it to grow and shrink */
+    margin-top: 100px;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.custom-images {
+    flex: 1 1 auto; /* Allow it to grow and shrink */
+    margin-top: 100px;
+    position: relative;
+}
+.custom-images .container {
+    position: relative;
+}
+
+.thid-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 936px) {
+    .custom-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .custom-images {
+        margin-top: 20px; /* Adjust margin if needed */
+    }
+    .footer-content{
+        margin-top: 100px;
+    }
+}
+.bg-div-three {
+    position: absolute; /* Position absolute to layer it above the background image */
+    top: 140px; /* Adjust as needed */
+    left: 12px; /* Adjust as needed */
+    width: 430px;
+    height: 200px;
+    background-color: orange;
+    z-index: 2;
+}
+.card-three {
+    position: relative;
+    z-index: 3;
+    left: 12px;
+    top: 40px; 
+    width: 290px;
+    height: 100px;
+}
+/* Media Queries */
+@media screen and (max-width: 756px) {
+    .image-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .bg-div-three {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .app-promo-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .content {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner .text {
+        font-size: 4vw;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner .cta .phone-number {
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+
+    .banner .cta .button {
+        font-size: 4vw;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container-fluid, .cards-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card-three {
+        width: 100%;
+    }
+}
+
+@media (max-width: 343px) {
+    .container-fluid, .cards-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card-three {
+        width: 100%;
+    }
+
+    .contact-first-heading {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+}
+@media(max-width:1939px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 590px;
+        height: 280px;
+        background-color: orange;
+        z-index: 2;
+    }
+.thid-image{
+    width: 450px;
+}
+
+}
+@media(max-width:1433px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 430px;
+        height: 200px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1677px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 490px;
+        height: 200px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1453px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 420px;
+        height: 200px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1333px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 430px;
+        height: 200px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .thid-image {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1281px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 370px;
+        height: 200px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+
+    .thid-image {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1142px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 350px;
+        height: 150px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+
+    .thid-image {
+        width: 70%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1094px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 140px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 310px;
+        height: 150px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+
+    .thid-image {
+        width: 70%;
+        height: auto;
+    }
+    
+}
+
+@media(max-width:1075px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 110px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 320px;
+        height: 150px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 70%;
+        height: auto;
+    }
+    
+}
+@media(max-width:1023px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 110px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 290px;
+        height: 150px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 70%;
+        height: auto;
+    }
+    
+}
+@media(max-width:936px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 110px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 350px;
+        height: 150px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .thid-image {
+        width: 70%;
+        height: auto;
+    }
+    
+}
+@media(max-width:817px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 110px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 270px;
+        height: 120px;
+        background-color: orange;
+        z-index: 2;
+    }
+
+    .thid-image {
+        width: 60%;
+        height: auto;
+    }
+    
+}
+@media(max-width:768px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 110px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 290px;
+        height: 110px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .thid-image {
+        width: 50%;
+        height: auto;
+    }
+    
+}
+
+@media(max-width:720px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 69px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 280px;
+        height: 110px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .thid-image {
+        width: 40%;
+        height: auto;
+    }
+    
+}
+
+@media(max-width:672px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 69px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 210px;
+        height: 110px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .thid-image {
+        width: 40%;
+        height: auto;
+    }
+    
+}
+@media(max-width:532px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 69px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 160px;
+        height: 80px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .thid-image {
+        width: 40%;
+        height: auto;
+    }
+    
+}
+@media(max-width:375px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 69px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 190px;
+        height: 80px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 80%;
+    }
+
+    .thid-image {
+        width: 40%;
+        height: auto;
+    }
+    
+}
+@media(max-width:437px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 69px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 190px;
+        height: 80px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 80%;
+    }
+
+    .thid-image {
+        width: 40%;
+        height: auto;
+    }
+    
+}
+
+@media(max-width:444px){
+    .custom-features{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:334px){
+    .bg-div-three {
+        position: absolute; /* Position absolute to layer it above the background image */
+        top: 70px; /* Adjust as needed */
+        left: 12px; /* Adjust as needed */
+        width: 220px;
+        height: 120px;
+        background-color: orange;
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+
+    .thid-image {
+        width: 60%;
+        height: auto;
+    }
+    
+}
+
+

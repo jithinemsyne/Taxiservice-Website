@@ -1,0 +1,189 @@
+/* General Styles */
+.row-equal .card {
+  width: 100%;
+}
+
+.carousel-inner > .row-equal.active,
+.carousel-inner > .row-equal.next,
+.carousel-inner > .row-equal.prev {
+  display: flex;
+  gap: 50px;
+  
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  left: 150px;
+  
+}
+
+.card-one, .card-two, .card-three {
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.card-slider {
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title, .title2 {
+  text-shadow: 2px 1px 0 rgb(0 0 0);
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-size: 25px;
+  text-align: center;
+  background: linear-gradient(88deg, #080808 0%, #66666617 100%);
+  color: white;
+}
+
+.butn {
+  display: flex;
+  justify-content: center;
+}
+
+.prev, .next {
+  padding-top: 11px;
+}
+
+/* Background Divs */
+.bg-div-one, .bg-div-two, .bg-div-three {
+  width:90%;
+  height: 200px;
+  background-color: orange;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cards */
+.card-one, .card-two, .card-three {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Prevent Overflow and Ensure Full Width */
+.container-fluid, .container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Button Styling */
+.enquiry-button {
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.starting-price-text{
+  color: orange;
+}
+
+@media(max-width:1433px){
+  .bg-div-one, .bg-div-two, .bg-div-three {
+    width:90%;
+    height: 200px;
+    background-color: orange;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+}
+/* Responsive Styles */
+@media (max-width: 993px) {
+  .row-equal {
+    flex-direction: column;
+  }
+
+  .bg-div-one, .bg-div-two, .bg-div-three {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+
+  .bg-div-one {
+    height: 200px;
+  }
+
+  .bg-div-two {
+    top: 200px;
+    height: 220px;
+  }
+
+  .bg-div-three {
+    height: 220px;
+    top: 400px;
+  }
+
+  .card-two {
+    height: 70px;
+    margin-top: 10px;
+  }
+
+  .card-three {
+    height: 70px;
+    margin-top: 10px;
+  }
+
+  .carousel-inner {
+    right: auto;
+    
+    height: 1400px;
+    
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    left: auto; /* Reset any left positioning */
+    height: 1400px; /* Maintain the height, adjust as needed */
+  }
+}
+@media (max-width: 320px) {
+  .carousel-inner {
+   left: auto;
+   right: auto  ;
+  }
+
+}
+
+
+
+@media(max-width:1152px){
+  .carousel-inner {
+   left: auto;
+   right: 5px;
+ 
+ 
+  }
+  .carousel-inner > .row-equal.active,
+  .carousel-inner > .row-equal.next,
+  .carousel-inner > .row-equal.prev {
+    display: flex;
+    gap: 90px;
+    
+  }
+  .bg-div-one, .bg-div-two, .bg-div-three {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+}

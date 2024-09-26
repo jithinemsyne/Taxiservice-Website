@@ -1,0 +1,190 @@
+/* General Styles */
+.row-equal .card {
+    width: 100%;
+  }
+  
+  .carousel-inner > .row-equal.active,
+  .carousel-inner > .row-equal.next,
+  .carousel-inner > .row-equal.prev {
+    display: flex;
+    gap: 50px;
+    
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    left: 250px;
+    overflow-x: hidden;
+  }
+  .card-slider {
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+
+  
+  .butn {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  
+  .prev, .next {
+    padding-top: 11px;
+    
+  }
+  
+
+  @media(max-width:1433px){
+    .bg-div-one, .bg-div-two, .bg-div-three {
+      width:90%;
+      height: 200px;
+      background-color: orange;
+      border-radius: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    
+  }
+  /* Responsive Styles */
+  @media (max-width: 993px) {
+    .row-equal {
+        flex-direction: column;
+    }
+  
+    .carousel-inner {
+      left: 300px;
+      height: 1400px;
+    
+    }
+  }
+  @media(max-width:768px){
+    .carousel-inner { 
+     padding-right: 400px;
+    
+    }
+  }
+  @media(max-width:1140px){
+
+    .carousel-inner > .row-equal.active,
+    .carousel-inner > .row-equal.next,
+    .carousel-inner > .row-equal.prev {
+      display: flex;
+      gap: 90px;
+      
+    }
+
+  }
+  .card {
+    margin: 0 auto;
+    width: calc(100% + 100px); /* Increase the card size by 100px */
+    max-width: 36rem; /* Adjust max-width accordingly */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Add padding for spacing between content and card edges */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border: none; /* Remove the border */
+    z-index: 1; /* Set z-index for the card */
+   
+}
+
+/* Styles for the card-wrapper */
+.card-wrapper {
+    position: relative;
+    padding-bottom: 60px; /* Adjust based on button height */
+}
+
+/* Styles for the card footer */
+.card-footer {
+    position: absolute;
+    bottom: 25px; /* Move button 20px up from the bottom */
+    left: 30px;   /* Move button 50px to the left */
+    display: flex;
+    justify-content: center;
+    border: none;
+    z-index: 2; /* Set z-index for the card-footer */
+}
+
+/* Styles for the button */
+.btn {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
+@media (max-width: 645px) {
+
+
+  .card {
+      width: 90%;
+      max-width: none;
+  }
+
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+      
+  }
+}
+@media(max-width:1150px){
+  .carousel-inner {
+      left: auto;
+      padding-left: 100px;
+  }
+  
+}
+@media(max-width:758px){
+  .carousel-inner {
+      height: auto;
+  }
+  .card-wrapper{
+    width: 300px;
+  }
+  
+}
+@media(max-width:768px){
+  .carousel-inner {
+    height: auto;
+    left: 50px;
+  
+}
+.card-wrapper{
+  width: 300px;
+}
+
+}
+@media(max-width:375px){
+  .carousel-inner {
+      left: auto;
+      right: 50px;
+  }
+  
+}
+@media(max-width:414px){
+  .carousel-inner {
+      left: auto;
+      right: 50px;
+  }
+  
+}
